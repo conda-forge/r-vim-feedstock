@@ -1,4 +1,4 @@
-{% set version = '4.7.0' %}
+{% set version = "4.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/VIM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/VIM/VIM_{{ version }}.tar.gz
-  sha256: cdd64cbdca23c097efa8d5084bfc1c0d1449744e90a41680a5246db979d14cee
+  sha256: 3c6b4fdc10c0375e3fdc56b34a8c05661155bd3166a8b3f36b0addf73d51a423
 
 build:
   merge_build_host: True  # [win]
-  number: 1002
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
