@@ -1,4 +1,4 @@
-{% set version = '5.1.0' %}
+{% set version = "5.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/VIM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/VIM/VIM_{{ version }}.tar.gz
-  sha256: 633dc2858272078f733490dac182551ce6b7338f8420046bee190f6fe305c024
+  sha256: ca1430103b6bd658e318bbbbd9c25763d11d0b3f52706b1a7ea7fafd408e4270
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -70,19 +70,15 @@ test:
 about:
   home: https://github.com/statistikat/VIM
   license: GPL-2
-  summary: New tools for the visualization of missing and/or imputed values are introduced, which
-    can be used for exploring the data and the structure of the missing and/or imputed
-    values. Depending on this structure of the missing values, the corresponding methods
-    may help to identify the mechanism generating the missing values and allows to explore
-    the data including missing values. In addition, the quality of imputation can be
-    visually explored using various univariate, bivariate, multiple and multivariate
-    plot methods (<doi:10.1007/s11634-011-0102-y>). A graphical user interface available
-    in the separate package VIMGUI allows an easy handling of the implemented plot methods.
-    Fast imputation methods such as k-nearest neighbor imputation (<doi:10.18637/jss.v074.i07>)
-    and imputation using robust methods are provided (<doi:10.1016/j.csda.2011.04.012>).
+  summary: New tools for the visualization of missing and/or imputed values are introduced, which can be used for exploring the data and the structure of the missing
+    and/or imputed values. Depending on this structure of the missing values, the corresponding methods may help to identify the mechanism generating the missing
+    values and allows to explore the data including missing values. In addition, the quality of imputation can be visually explored using various univariate, bivariate,
+    multiple and multivariate plot methods (<doi:10.1007/s11634-011-0102-y>). A graphical user interface available in the separate package VIMGUI allows an easy handling
+    of the implemented plot methods. Fast imputation methods such as k-nearest neighbor imputation (<doi:10.18637/jss.v074.i07>) and imputation using robust methods
+    are provided (<doi:10.1016/j.csda.2011.04.012>).
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
