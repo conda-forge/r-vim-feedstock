@@ -1,4 +1,4 @@
-{% set version = "6.2.6" %}
+{% set version = "7.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/VIM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/VIM/VIM_{{ version }}.tar.gz
-  sha256: 56a855285b816748c3a5893220e55a00b8573eb649eca5db79c99f11035ff0f6
+  sha256: f11d25522c9cd9fd48c0bbbdf9c9e52cb12ec9e59e11c897ab93fb097581fe00
 
 build:
   number: 0
