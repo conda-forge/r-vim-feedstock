@@ -25,13 +25,20 @@ requirements:
   build:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
     - r-mass                       # [build_platform != target_platform]
+    - r-r6                         # [build_platform != target_platform]
     - r-rcpp                       # [build_platform != target_platform]
     - r-car                        # [build_platform != target_platform]
     - r-colorspace                 # [build_platform != target_platform]
     - r-data.table                 # [build_platform != target_platform]
     - r-e1071                      # [build_platform != target_platform]
+    - r-future                     # [build_platform != target_platform]
     - r-laeken                     # [build_platform != target_platform]
+    - r-mlr3                       # [build_platform != target_platform]
+    - r-mlr3learners               # [build_platform != target_platform]
+    - r-mlr3pipelines              # [build_platform != target_platform]
+    - r-mlr3tuning                 # [build_platform != target_platform]
     - r-nnet                       # [build_platform != target_platform]
+    - r-paradox                    # [build_platform != target_platform]
     - r-ranger                     # [build_platform != target_platform]
     - r-robustbase                 # [build_platform != target_platform]
     - r-sp                         # [build_platform != target_platform]
@@ -51,13 +58,20 @@ requirements:
   host:
     - r-base
     - r-mass
+    - r-r6
     - r-rcpp
     - r-car
     - r-colorspace
     - r-data.table >=1.9.4
     - r-e1071
+    - r-future
     - r-laeken
+    - r-mlr3
+    - r-mlr3learners
+    - r-mlr3pipelines
+    - r-mlr3tuning
     - r-nnet
+    - r-paradox
     - r-ranger
     - r-robustbase
     - r-sp
@@ -66,13 +80,20 @@ requirements:
   run:
     - r-base
     - r-mass
+    - r-r6
     - r-rcpp
     - r-car
     - r-colorspace
     - r-data.table >=1.9.4
     - r-e1071
+    - r-future
     - r-laeken
+    - r-mlr3
+    - r-mlr3learners
+    - r-mlr3pipelines
+    - r-mlr3tuning
     - r-nnet
+    - r-paradox
     - r-ranger
     - r-robustbase
     - r-sp
